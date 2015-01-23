@@ -5,12 +5,20 @@
  *      Author: jonastorstensson
  */
 
-
 #include <stdio.h>
 
-int main(void){
-	printf("Hello World!!\n");
-	for(int x=0;x<10;x++){
-		printf("The value is: %d\n", x);
+int main(void) {
+
+	int eyes;
+	int toes;
+
+	printf("Enter number of eyes and toes: ");
+	scanf("%d%d", &eyes, &toes);
+
+	if (eyes == 2 && toes == 10) {
+		printf("You are normal");
+	} else {
+		printf("You are weird");
 	}
+
 }
