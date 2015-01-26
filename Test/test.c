@@ -1,24 +1,23 @@
-/*
- * test.c
- *
- *  Created on: 23 jan 2015
- *      Author: jonastorstensson
- */
-
 #include <stdio.h>
 
 int main(void) {
 
-	int eyes;
-	int toes;
 
-	printf("Enter number of eyes and toes: ");
-	scanf("%d%d", &eyes, &toes);
+	char name[18] = "Jonas Torstensson";
 
-	if (eyes == 2 && toes == 10) {
-		printf("You are normal");
-	} else {
-		printf("You are weird");
-	}
+	printf("My name is %s\n", name);
+
+
+	name[2] = 'M';
+	printf("My name is %s\n", name);
+
+	char food[] = "tuna";
+	printf("The best food ever is %s\n", food);
+
+	strcpy(food, "bacon");
+	printf("The best food ever is %s\n", food);
+
+
+	return 0;
 
 }
